@@ -91,7 +91,8 @@ mod legacy;
 use legacy::x86;
 
 #[cfg(feature = "riscv")]
-use legacy::riscv;
+// use legacy::riscv;
+pub(crate) mod riscv;
 
 pub mod unwind;
 
